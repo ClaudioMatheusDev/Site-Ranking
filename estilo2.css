@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #1976d2; /* blue accent-3 */
+    color: white;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.nav-wrapper ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrapper ul li {
+    margin-left: 20px;
+}
+
+.nav-wrapper ul li img {
+    max-width: 100px;
+    height: auto;
+}
+
+.nav-wrapper ul li a {
+    text-decoration: none;
+    color: black; /* Override for blue accent-3 */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-wrapper ul li a:hover {
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 50px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 15px;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.formulario form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario form label,
+.formulario form input {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.formulario form .btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.btn {
+    background-color: #406daf;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    transition: all linear 160ms;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    margin: 0px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #ff0676;
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-wrapper ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-wrapper ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .nav-wrapper ul li a {
+        font-size: 1.2em;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .formulario form label,
+    .formulario form input {
+        width: 50%;
+    }
+
+    .formulario form .btn-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+.col.s4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 50px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 15px;
+    align-items: center;
+    margin-top: 250px;
+    margin-left: 100px;
+}
